@@ -36,6 +36,8 @@ input[type='checkbox'] {
   margin-right: 15px;
 }
 
+/* the vertical align will align the checkbox to the top, right, left, middle of the area*/
+
 input[type='checkbox']:checked {
   background-color: #f1be32;
   border-color: #e2a60d;
