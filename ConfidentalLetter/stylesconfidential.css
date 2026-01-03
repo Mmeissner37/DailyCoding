@@ -1,0 +1,35 @@
+.blurred {
+  filter: blur(3px);
+}
+
+body {
+  font-family: Tahoma, sans-serif
+}
+
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+#confidential, #top-secret {
+  display: inline-block;
+  padding: 1px;
+  border: 3px solid red;
+  color: crimson;
+  font-size: 1.1rem;
+}
+
+#confidential {
+  transform: rotate(-45deg);
+  margin-left: 175px;
+  font-size: 1.5rem;
+}
+
+#top-secret {
+  transform: rotate(30deg);
+  margin-left: 100px;
+  font-size: 1.5rem;
+}
