@@ -15,4 +15,12 @@ a:visited {
 there is a specific order you need to write your CSS in
 link, visited, hover, focus, then active*/ 
 
+/*scroll-behavior: smooth;: This property and value enables a smooth scrolling behavior.
+prefers-reduced-motion feature: This is a media feature that can be used to detect the 
+user's animation preference.*/
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
