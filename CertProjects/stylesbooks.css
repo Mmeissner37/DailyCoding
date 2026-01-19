@@ -1,0 +1,81 @@
+.header {
+  background-color: lightblue;
+  padding-top: 10px;
+  margin: 0;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(white, crimson,white);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(yellow, orange, white);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(white, green);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 75px;
+  padding: 2px;
+  text-align: center;
+  background-image: linear-gradient(yellow, orange, white);
+
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 75px;
+  padding: 2px;
+  text-align: center;
+  background-image: linear-gradient(to top, white, crimson,white);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 75px;
+  padding: 2px;
+  text-align: center;
+  background-image: linear-gradient(white, green);
+}
+ 
+span[class="status"], span[class^="rate"] {
+  height: 30px;
+  padding: 2px;
+  width: 87px;
+}
+
+span[class="rate"] {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+span[class^="rate"] > span{
+  border: 1px solid white;
+  border-radius: 15px;
+  margin: 5px;
+  height: 13px;
+  width: 13px;
+  background-color: white;
+}
+
+span[class~="one"] :first-child {
+  background-image: linear-gradient(to top, purple, blue);
+}
+
+span[class~="two"] :nth-child(-n+2){
+  background-image: linear-gradient(to top, purple, blue);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(to top, purple, blue);
+}
