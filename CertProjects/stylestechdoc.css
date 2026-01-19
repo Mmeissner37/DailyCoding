@@ -1,0 +1,59 @@
+body {
+  background-color: beige;
+  max-width: 850px;
+}
+
+#list {
+  padding-left: 20px;
+}
+
+.code {
+  border: 0.5px solid white;
+  padding: 5px;
+  background-color: white;
+  margin-left: 15px;
+  max-width: 500px;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+@media (only-screen) {
+  max-width: 500px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: grey;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 500px;
+  align-items: left;
+  margin-bottom: 5rem;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#navbar a {
+  display: block;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: black;
+  border: 1px solid black;
+  padding: 5px; 
+  background-color: white;
+  border-radius: 4px;
+}
+
+#main-doc {
+  height: 1500px;
+  padding: 16px;
+  margin-top: 30px;
+}
