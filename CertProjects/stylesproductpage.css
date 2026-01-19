@@ -1,0 +1,48 @@
+body {
+  background-color: linen;
+  width: 100%;
+}
+
+#header-img {
+  width: 75px;
+  height: 75px;
+}
+
+#header {
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+#nav-bar {
+  font-family: sans-serif;
+  align-items: right;
+  gap: 2rem;
+  margin-left: 25rem;
+  margin-top: 1.7rem;
+}
+
+#nav, #nav-bar, #header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  display: flex;
+  flex: wrap;
+  background-color: linen;
+}
+
+main {
+  margin-top: 10rem;
+  margin-left: 15px;
+}
+
+#about-text {
+  padding-left: 4px;
+  padding-right: 4px;
+  max-width: 700px;
+}
+
+@media (only-screen) {
+  max-width: 420px;
+}
