@@ -1,0 +1,101 @@
+:root {
+  --color0: #fff;
+  --color1: lightblue;
+  --color2: rgb(130, 202, 226);
+  --color3: rgb(78, 169, 200);
+  --color4: rgb(41, 140, 173);
+  --color5: rgb(17, 113, 146);
+  --solid-border: 1px solid black;
+  --dashed-border: 1px dashed black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: grey;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+
+body {
+  margin: 5% auto;
+  padding: 50px;
+  width: 700px;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+
+th, td {
+  width: 100px;
+  height: 20px;
+}
+
+td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}  
+
+.day {
+  border-bottom: 1px solid black;
+}
+
+.sharp td{
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+#legend {
+margin-top: 50px;
+  text-align: center;
+}
+
+#legend-gradient {
+  width: 100px;
+  height: 25px;
+  margin: auto;
+  background-image: linear-gradient(
+    to right, 
+    var(--color0) 15%,
+    var(--color1) 15% 30%,
+    var(--color2) 30% 45%,
+    var(--color3) 45% 65%,
+    var(--color4) 65% 80%, 
+    var(--color5) 80%
+  );
+  border: 1px solid black;
+}
