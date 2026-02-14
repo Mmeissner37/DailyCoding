@@ -1,0 +1,13 @@
+//using string concatenation and the plus (+) operator:
+
+const name = "Alice";
+const age = 25;
+const message = "My name is " + name + " and I am " + age + " years old.";
+console.log(message);
+
+//using template literals and string interpolation:
+
+const name = "Alice";
+const age = 25;
+const message = `My name is ${name} and I am ${age} years old.`;
+console.log(message);
