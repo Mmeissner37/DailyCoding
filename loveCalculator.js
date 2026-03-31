@@ -11,6 +11,14 @@ if (loveScore > 70) {
       "%. " +
       "You love each other like Kanye loves Kanye.",
   );
+  if (loveScore > 30 && loveScore <= 70) {
+    alert("Your love score is " + loveScore + "%.");
+  }
 } else {
-  alert("Your love score is " + loveScore + "%");
+  alert(
+    "Your love score is " +
+      loveScore +
+      "%." +
+      "You go together like oil and water.",
+  );
 }
