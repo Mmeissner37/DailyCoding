@@ -4,6 +4,7 @@ has_bike = True
 has_car = True
 has_ride_share_app = True
 
+#**MY CODE**#
 #number 5
 if not distance_mi:
     print("False")
@@ -31,3 +32,16 @@ elif has_ride_share_app == True:
 else:
     print("False")
 
+
+#**SOLUTION**
+
+if not distance_mi:
+    print(False)
+elif distance_mi <= 1 and not is_raining:
+    print(True)
+elif 1 < distance_mi <= 6 and has_bike and not is_raining:
+    print(True)
+elif distance_mi > 6 and (has_car or has_ride_share_app):
+    print(True)
+else:
+    print(False)
